@@ -1,9 +1,5 @@
-# README
+Thrill Life Productions
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
 
 * Ruby version
 
@@ -21,5 +17,17 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
-# thrilLifeProductions
+Link for Bootstrap
+
+https://github.com/twbs/bootstrap-rubygem
+
+https://rubygems.org/gems/bootstrap/versions/4.0.0.alpha6
+
+GEMFILE:
+
+gem 'bootstrap', '~> 4.0.0.alpha6'
+=
+Terminal - INSTALL:
+
+gem install bootstrap --pre
+=

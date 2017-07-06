@@ -1,0 +1,82 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//header ==hero text-center=====start==========
+.hero {
+  background-image: url(../img/dj1.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  padding-top: 20vh;
+  padding-bottom: 25vh
+}
+//header =====end==============================
+
+//components ---------------------------------------
+
+// nav =========start====================
+
+.navbar-inverse .navbar-brand {
+  font-family: $decorative;
+  color: $brand-primary;
+  font-size: 3rem;
+}
+
+.nav-item {
+  margin-left: 2em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+// nav =========end====================
+
+// parallax =========start====================
+
+.parallax {
+  background: pink;
+  display: none;
+  @include media-breakpoint-up(md){
+    height: 30vmax;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: block;
+  }
+}
+
+.parallax-home {
+  background-image: url(../img/desktop1.jpg);
+}
+// parallax =========end====================
+
+// footer =========start====================
+
+footer {
+  margin-top: 4em;
+  background: $black;
+  padding: 2em 0 1.5em;
+  color: $gray-light;
+  text-align: center;
+  @include media-breakpoint-up(lg) {
+    text-align: left;
+  }
+}
+
+.social-links {
+  @include media-breakpoint-up(lg){
+    text-align: right;
+  }
+}
+
+
+.social-link:not(:first-of-type)::before {
+  content: '/';
+  display: inline-block;
+  color: rgba($gray-light, 0.4)
+}
+
+.social-link a {
+  color: $gray-light;
+  display: inline-block;
+  margin: 0 0.5em 0 0.7em;
+}
+// footer =========end====================
