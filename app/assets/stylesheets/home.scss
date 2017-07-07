@@ -62,7 +62,7 @@ h1 {
   display: none;
   @include media-breakpoint-up(md){
     height: 30vmax;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     display: block;
   }
@@ -72,7 +72,7 @@ h1 {
   background: image-url('desktop1.jpg');
   background-attachment: fixed;
   height: 30vmax;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
   display: block;
 }
