@@ -62,7 +62,7 @@ h1 {
   display: none;
   @include media-breakpoint-up(md){
     height: 30vmax;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     display: block;
   }
