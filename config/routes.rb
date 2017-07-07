@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
-  root 'home#home_index'
-  
-  root 'about#parallax'
-  root 'music#music'
-  root 'events#upcoming_events'
+  root to: 'home#home_index'
+
+  get '/about' => 'about#parallax'
+  get '/music' => 'music#music'
+  get '/events' => 'events#upcoming_events'
 
 
 

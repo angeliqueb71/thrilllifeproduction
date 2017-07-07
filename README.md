@@ -13,7 +13,7 @@ Thrill Life Productions
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+
 
 * Deployment instructions
 
@@ -31,3 +31,18 @@ Terminal - INSTALL:
 
 gem install bootstrap --pre
 =
+
+Font Awesome = http://fontawesome.io/get-started/
+
+Sass Ruby Gem
+Use the Official Font Awesome Sass Ruby Gem to easily get Font Awesome Sass into a Rails or Compass project. Generously maintained by @supercodepoet.
+
+Add this line to your application's Gemfile:
+gem 'font-awesome-sass'
+And then execute:
+$ bundle
+
+If you use Rails, add this to your e.g. application.scss:
+
+@import "font-awesome-sprockets";
+@import "font-awesome";

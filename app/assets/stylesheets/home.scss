@@ -4,7 +4,7 @@
 
 //header ==hero text-center=====start==========
 .hero {
-  background-image: url(../img/dj1.jpg);
+  background-image: image-url('dj1.jpg');
   background-size: cover;
   background-position: bottom center;
   padding-top: 20vh;
@@ -44,7 +44,7 @@
 }
 
 .parallax-home {
-  background-image: url(../img/desktop1.jpg);
+  background: image_url('desktop1.jpg');
 }
 // parallax =========end====================
 

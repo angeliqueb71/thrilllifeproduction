@@ -1,4 +1,4 @@
 class HomeController < ApplicationController
-  def thrill_index
+  def home_index
   end
 end

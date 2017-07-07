@@ -9,7 +9,7 @@
 }
 
 .about-title {
-  background: url(../img/desktop1.jpg);
+  background: image-url("./assets/desktop1.jpg");
   background-size: cover;
   background-position: center;
   min-height: 45vw;
@@ -73,6 +73,6 @@
 }
 
 .parallax-home {
-  background-image: url(../img/desktop1.jpg);
+  background: image-url('/desktop1.jpg');
 }
 // parallax ====================start ===========
