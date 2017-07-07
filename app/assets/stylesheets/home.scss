@@ -9,7 +9,7 @@
 }
 
 body {
- margin: 0;  
+ margin: 0;
  padding-top: 96px; // the height of my navbar
  font-family: sans-serif;
  font-weight: lighter;
@@ -55,7 +55,6 @@ h1 {
 
 // nav =========start====================
 .navbar {
-  background: image-url('skyline.jpg');
   font-family: 'Orbitron', sans-serif;
   font-size: 5rem;
   width: 100%;
@@ -103,7 +102,8 @@ footer {
   margin-top: 4em;
   background: $black;
   padding: 2em 0 1.5em;
-  color: $gray-light;
+  color: #FEFFE5;
+  font-weight: 700;
   text-align: center;
   @include media-breakpoint-up(lg) {
     text-align: left;
