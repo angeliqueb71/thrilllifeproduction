@@ -1,6 +1,8 @@
 <!-- <h1>Home#thrill_index</h1>
 <p>Find me in app/views/home/thrill_index.html.erb</p> -->
 
+
+ <body>
 <!-- navbar --><!--fixed-top ====home.scss=========start=-->
       <nav class="navbar fixed-top navbar-toggleable-sm navbar-light bg-faded">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,16 +12,16 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Music</a>
+                <a class="nav-link" href="music">Music</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link disabled" href="#">Upcoming Events</a>
+                <a class="nav-link disabled" href="/events">Upcoming Events</a>
             </li>
           </ul>
         </div>
@@ -46,7 +48,6 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 about-title d-flex align-items-center justify-content-center">
-                <!-- <%= image_tag ("desktop1.jpg"), width: "100%", class: "about-title" %> -->
                 <h2 class="display-2">About</h2>
                </div>
               <div class="col-lg-4 col-md-6 about-text d-flex flex-column justify-content-center">
@@ -98,6 +99,7 @@
         </section> <!--/ABOUT -->
    <!--  ===========parallax=========about.scss================================= -->
         <div class="parallax parallax-home">
+
         </div>
    <!--  ===========our music=========start=====music.scss================== -->
         <section class="music text-center">
@@ -144,11 +146,11 @@
               <div class="col-lg-3 col-md-6">
                 <div class="card border-0">
                   <%= image_tag ("dj1.jpg"), class:  "card-img img-fluid "  %>
-                  <!-- <img src="img/dj1.jpg" class="card-img img-fluid"  alt="Music Events"> -->
+
                   <div class="card-img-overlay">
                     <h3 class="show-title">The Rooftop</h3>
                     <p>Output, Brooklyn, NY</p>
-                    <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i>07/06/2017</p>
+                    <p class="date"></i>07/06/2017</p>
                     <p class="price"><small>$10.00</small></p>
                     <a href="" class="btn btn-primary mt-auto">Buy Tickets</a>
                   </div>
@@ -157,11 +159,11 @@
               <div class="col-lg-3 col-md-6">
                 <div class="card border-0">
                   <%= image_tag ("dj1.jpg"), class:  "card-img img-fluid "  %>
-                  <!-- <img src="img/dj1.jpg"  class="card-img img-fluid" alt="Music Events"> -->
+
                   <div class="card-img-overlay">
                     <h3 class="show-title">The Rooftop</h3>
                     <p>Output, Brooklyn, NY</p>
-                    <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i>07/06/2017</p>
+                    <p class="date"></i>07/06/2017</p>
                     <p class="price"><small>$10.00</small></p>
                     <a href="" class="btn btn-primary mt-auto">Buy Tickets</a>
                   </div>
@@ -170,11 +172,11 @@
               <div class="col-lg-3 col-md-6">
                 <div class="card border-0">
                   <%= image_tag ("dj1.jpg"), class:  "card-img img-fluid "  %>
-                  <!-- <img src="img/dj1.jpg"  class="card-img img-fluid" alt="Music Events"> -->
+
                   <div class="card-img-overlay">
                     <h3 class="show-title">The Rooftop</h3>
                     <p>Output, Brooklyn, NY</p>
-                    <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i>07/06/2017</p>
+                    <p class="date"></i>07/06/2017</p>
                     <p class="price"><small>$10.00</small></p>
                     <a href="" class="btn btn-primary mt-auto">Buy Tickets</a>
                   </div>
@@ -183,11 +185,11 @@
               <div class="col-lg-3 col-md-6">
                 <div class="card border-0">
                   <%= image_tag ("dj1.jpg"), class:  "card-img img-fluid "  %>
-                  <!-- <img src="img/dj1.jpg"  class="card-img img-fluid" alt="Music Events"> -->
+
                   <div class="card-img-overlay">
                     <h3 class="show-title">The Rooftop</h3>
                     <p>Output, Brooklyn, NY</p>
-                    <p class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i>07/06/2017</p>
+                    <p class="date"></i>07/06/2017</p>
                     <p class="price"><small>$10.00</small></p>
                     <a href="" class="btn btn-primary mt-auto">Buy Tickets</a>
                   </div>
@@ -217,4 +219,14 @@
             </div>
           </div>
         </footer>
-  <!--  ===========footer / soical media====end======home.scss================= -->
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+    <%= yield %>
+  </body>
+<!--  ===========footer / soical media====end======home.scss================= -->

@@ -10,7 +10,7 @@
 }
 
 .show-title {
-  font-family: $sans;
+  font-family: sans-serif;
 }
 
 .show-info {
@@ -23,7 +23,7 @@
 }
 
 .date {
-  font-weight: $bold;
+  font-weight: bold;
   margin-top: 1.25em;
 
   &::before {
@@ -35,16 +35,16 @@
 }
 
 .price {
-  font-weight: $bold;
+  font-weight: bold;
 
   small {
-    font-weight: $normal;
+    font-weight: normal;
   }
 
   &::before {
     content: '\f145';
     display: inline-block;
-    font-family: FontAwesome;
+    font-family: FontAwesome; //<i class="fa fa-calendar-o" aria-hidden="true"></i>
     margin-right: 0.5em;
   }
 }

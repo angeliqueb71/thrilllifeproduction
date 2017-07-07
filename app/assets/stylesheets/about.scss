@@ -5,18 +5,18 @@
 
 //==============about===start==============>
 .about {
-  background: $black;
+  background: #1f1f1f;
 }
 
 .about-title {
-  background: image-url("./assets/desktop1.jpg");
+  background: image-url("desktop1.jpg");
   background-size: cover;
   background-position: center;
   min-height: 45vw;
 }
 
 .about-text {
-  color:$white;
+  color: white;
   padding-top: 6vh;
   padding-bottom: 6vh;
   @include media-breakpoint-up(md) {
@@ -33,7 +33,7 @@
 .band-member {
   margin-bottom: 1.5em;
   box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
-  background: $black;
+  background: #1f1f1f;
   @include media-breakpoint-up(md) {
     position: absolute;
     top: -3em;
@@ -42,7 +42,7 @@
 }
 
 .band-member-name{
-  font-family: $sans;
+  font-family: sans-serif;
   text-transform: uppercase;
   margin-bottom: 0.25em;
 }
@@ -52,27 +52,3 @@
 }
 
 //==============about===end================>
-
-
-
-// --------------componets------------------------------
-
-
-// parallax ====================start ===========
-
-.parallax {
-  background: pink;
-  display: none;
-  @include media-breakpoint-up(md){
-    height: 30vmax;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    display: block;
-  }
-}
-
-.parallax-home {
-  background: image-url('/desktop1.jpg');
-}
-// parallax ====================start ===========

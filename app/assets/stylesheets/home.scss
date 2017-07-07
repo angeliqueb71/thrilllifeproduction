@@ -2,13 +2,37 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//typography ---------start----------------
+
+body {
+ padding-top: 96px; // the height of my navbar
+ font-family: sans-serif;
+ font-weight: lighter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: header-font;
+}
+
+h1 {
+ color: $brand-primary;
+}
+
+.lead {
+ margin-bottom: 1.5em;
+}
+
+//typography ---------end----------------
+
+
+
 //header ==hero text-center=====start==========
 .hero {
-  background-image: image-url('dj1.jpg');
+  background: image-url('dj1.jpg');
   background-size: cover;
   background-position: bottom center;
   padding-top: 20vh;
-  padding-bottom: 25vh
+  padding-bottom: 25vh;
 }
 //header =====end==============================
 
@@ -17,7 +41,7 @@
 // nav =========start====================
 
 .navbar-inverse .navbar-brand {
-  font-family: $decorative;
+  font-family: "banshee-std", cursive;
   color: $brand-primary;
   font-size: 3rem;
 }
@@ -36,15 +60,19 @@
   display: none;
   @include media-breakpoint-up(md){
     height: 30vmax;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: 100%;
     background-position: center;
     display: block;
   }
 }
 
 .parallax-home {
-  background: image_url('desktop1.jpg');
+  background: image-url('desktop1.jpg');
+  background-attachment: fixed;
+  height: 30vmax;
+  background-size: cover;
+  background-position: center;
+  display: block;
 }
 // parallax =========end====================
 

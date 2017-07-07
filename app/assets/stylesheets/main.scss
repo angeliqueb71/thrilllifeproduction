@@ -1,1 +1,51 @@
+//typography ---------end----------------
 
+//variables - fonts =======start===================
+
+// $sans: "mr-eaves-xl-modern", sans-serif;
+$decorative:"banshee-std", cursive;
+
+$header-font: $decorative;
+
+$light: 300;
+$normal: 400;
+$bold: 500;
+
+//variables - fonts =======end===================
+
+// / Custom ------start--------------------------
+//
+//this file to override default values
+// without modifying source files.
+
+$red:   #e23400;
+$black: #1f1f1f;
+$white: #FFF;
+
+// Create grayscale
+
+$gray: #2d2d2d;
+$gray-light: lighten($gray, 40%);
+
+
+// Reassign color vars to semantic color scheme
+$brand-danger: $red;
+
+//dont want round corners
+$enable-rounded: false;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $gray;
+$body-color: $white;
+
+$font-size-base: 1.4rem;
+$display1-size: 12vw;
+$lead-font-size: 1.65rem;
+
+$btn-padding-y: .7em;
+$btn-padding-x: 2em;
+
+// / Custom ------end--------------------------
