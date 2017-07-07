@@ -8,10 +8,12 @@ body {
  padding-top: 96px; // the height of my navbar
  font-family: sans-serif;
  font-weight: lighter;
+ background-color: #1f1f1f;
 }
 
 h1, h2, h3, h4, h5, h6 {
  font-family: header-font;
+ color: $gray-light;
 }
 
 h1 {
