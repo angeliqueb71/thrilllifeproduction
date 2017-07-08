@@ -6,10 +6,11 @@
 * {
   box-sizing: border-box;
   transition: all ease-in-out 250ms;
+  margin: 0;
+  padding: 10px;
 }
 
 body {
- margin: 0;
  padding-top: 96px; // the height of my navbar
  font-family: sans-serif;
  font-weight: lighter;
@@ -38,7 +39,7 @@ h1 {
 //header ==hero text-center=====start==========
 .hero {
   background: image-url('dj1.jpg');
-  background-size: 100%;
+  background-size: cover;
   background-position: bottom center;
   padding-top: 20vh;
   padding-bottom: 25vh;
