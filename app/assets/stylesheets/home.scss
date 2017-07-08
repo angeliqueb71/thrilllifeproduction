@@ -3,13 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 //typography ---------start----------------
-* {
-  box-sizing: border-box;
-  transition: all ease-in-out 250ms;
-}
-
 body {
- padding-top: 96px; // the height of my navbar
+ // padding-top: 96px; // the height of my navbar
  font-family: sans-serif;
  font-weight: lighter;
  background-color: #1f1f1f;
@@ -17,7 +12,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
  font-family: header-font;
- color: $gray-light;
+ color: #FBF5EB;
 }
 
 h1 {
@@ -26,6 +21,7 @@ h1 {
 
 .lead {
  margin-bottom: 1.5em;
+ color: #FBF5EB;
 }
 
 
@@ -45,6 +41,7 @@ h1 {
 
 .display-1 {
   font-family: 'Orbitron', sans-serif;
+  font-size: 5rem;
 }
 //header =====end==============================
 
@@ -53,7 +50,6 @@ h1 {
 // nav =========start====================
 .navbar {
   font-family: 'Orbitron', sans-serif;
-  font-size: 5rem;
 }
 
 .navbar-inverse .navbar-brand {
@@ -71,11 +67,11 @@ h1 {
 // parallax =========start====================
 
 .parallax {
-  background: pink;
   display: none;
   @include media-breakpoint-up(md){
     height: 30vmax;
     background-size: 100%;
+    background-attachment: fixed;
     background-position: center;
     display: block;
   }

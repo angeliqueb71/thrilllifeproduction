@@ -10,25 +10,6 @@
  @import "font-awesome-sprockets";
  @import "font-awesome";
 
-
  //typography ---------start----------------
 
- body {
-  padding-top: 96px; // the height of my navbar
-  font-family: sans-serif;
-  font-weight: lighter;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: header-font;
-  color: #FBF5EB;
-}
-
-h1 {
-  color: $brand-primary;
-}
-
-.lead {
-  margin-bottom: 1.5em;
-  color: lightgray;
-}
+ 
