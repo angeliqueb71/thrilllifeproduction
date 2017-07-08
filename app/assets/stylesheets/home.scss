@@ -103,7 +103,6 @@ footer {
   background: $black;
   padding: 2em 0 1.5em;
   color: #FEFFE5;
-  font-weight: 700;
   text-align: center;
   @include media-breakpoint-up(lg) {
     text-align: left;
@@ -111,6 +110,7 @@ footer {
 }
 
 .social-links {
+  color: #FEFFE5;
   @include media-breakpoint-up(lg){
     text-align: right;
   }
@@ -124,7 +124,7 @@ footer {
 }
 
 .social-link a {
-  color: $gray-light;
+  color: #FEFFE5;
   display: inline-block;
   margin: 0 0.5em 0 0.7em;
 }
