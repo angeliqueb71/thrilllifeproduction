@@ -35,6 +35,13 @@
 
 .address {
   color: #262523;
+  font-weight: bold;
+  margin-top: 1.25em;
+
+  &::before {
+    display: inline-block;
+    margin-right: 0.5em;
+  }
 }
 
 .date {
