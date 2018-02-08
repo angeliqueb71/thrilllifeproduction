@@ -4,7 +4,7 @@
 
 //typography ---------start----------------
 body {
- // padding-top: 96px; // the height of my navbar
+//  padding-top: 96px; // the height of my navbar
  font-family: sans-serif;
  font-weight: lighter;
  background-color: #1f1f1f;
@@ -15,9 +15,10 @@ h1, h2, h3, h4, h5, h6 {
  color: #FBF5EB;
 }
 
-h1 {
- color: $brand-primary;
-}
+// h1 {
+//  // color: $brand-primary;
+// }
+
 
 .lead {
  margin-bottom: 1.5em;
@@ -34,9 +35,11 @@ h1 {
 .hero {
   background: image-url('dj1.jpg');
   background-size: cover;
+  background-attachment: fixed;
   background-position: bottom center;
   padding-top: 20vh;
   padding-bottom: 25vh;
+  opacity: 0.85;
 }
 
 .display-1 {
@@ -53,7 +56,7 @@ h1 {
 }
 
 .navbar-inverse .navbar-brand {
-  color: $brand-primary;
+  color: green;
   font-size: 3rem;
 }
 
@@ -63,6 +66,35 @@ h1 {
   font-size: 1.2rem;
 }
 // nav =========end====================
+
+// blog =========start====================
+.body-blog {
+  line-height: 3.5;
+  display: block;
+  background-color: #f8f9fa;
+  background-attachment: fixed;
+  height: 100%;
+  text-align: center;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  margin: 16px!important;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.white, .hover-white:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+
+
+.card-4, .hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+// blog =========end====================
+
 
 // parallax =========start====================
 
@@ -111,7 +143,8 @@ footer {
 .social-link:not(:first-of-type)::before {
   content: '/';
   display: inline-block;
-  color: rgba($gray-light, 0.4)
+  // color: rgba($gray-light, 0.4);
+  color: lightgray;
 }
 
 .social-link a {

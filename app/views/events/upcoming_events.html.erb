@@ -2,5 +2,341 @@
 <p>Find me in app/views/events/upcoming_events.html.erb</p> -->
 
 <!--  ===========events==/ upcoming events===start======== -->
+<!-- <h1>Home#thrill_index</h1>
+<p>Find me in app/views/home/thrill_index.html.erb</p> -->
 
-<!--  =========== upcoming events=======end=============== -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="main.scss/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- Adobe typekit fonts-->
+    <script src="https://use.typekit.net/qcd8sjb.js"></script>
+    <script>try{Typekit.load({ async: true});}catch(e){}</script>
+
+  </head>
+  <body>
+     <!-- navbar -->
+      <nav class="navbar fixed-top navbar-toggleable-sm navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+         </button>
+          <a class="navbar-brand" href="#">Thrill Life Productions</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/music">Music</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/events">Upcoming Events</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!--header with btn  -->
+    <!--header with btn ====_home.scss======start================== -->
+    <section class="hero text-center">
+      <div class="container">
+        <h1 class="display-1">Thrillest events in the NYC area.</h1>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <p class="lead">Peak life experiences on the dance floor and around the world</p>
+              <div class="btn btn-primary">Listen to our music
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  <!--header with btn ====_home.scss======end================== -->
+
+  <!-- _______________________________________________________________________________ -->
+
+
+<!-- content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer  -->
+<div class="body-blog">
+  <div class="content" style="max-width:1400px">
+
+  <!-- Header -->
+  <div class="header-blog container center padding-32">
+      <h1><b>MY BLOG</b></h1>
+      <p>Welcome to the blog of <span class="tag">unknown</span></p>
+
+  </div>
+
+  <!-- Grid -->
+  <div class="row">
+
+  <!-- Blog entries -->
+  <div class="col l8 s12">
+    <!-- Blog entry -->
+    <div class="card-4 margin white">
+      <%= image_tag (""), class:  "card-img-top img-fluid " %>
+      <div class="container">
+        <h3><b>TITLE HEADING</b></h3>
+        <h5>Title description, <span class="opacity">April 7, 2014</span></h5>
+      </div>
+
+      <div class="container">
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <div class="row">
+          <div class="col m8 s12">
+            <p><button class="button padding-large white border"><b>READ MORE »</b></button></p>
+          </div>
+          <div class="col m4 hide-small">
+            <p><span class="padding-large right"><b>Comments  </b> <span class="tag">0</span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Blog entry -->
+    <div class="card-4 margin white">
+    <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
+      <div class="container">
+        <h3><b>BLOG ENTRY</b></h3>
+        <h5>Title description, <span class="opacity">April 2, 2014</span></h5>
+      </div>
+
+      <div class="container">
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <div class="row">
+          <div class="col m8 s12">
+            <p><button class="button padding-large white border"><b>READ MORE »</b></button></p>
+          </div>
+          <div class="col m4 hide-small">
+            <p><span class="padding-large right"><b>Comments  </b> <span class="badge">2</span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- END BLOG ENTRIES -->
+  </div>
+
+  <!-- Introduction menu -->
+  <div class="col l4">
+    <!-- About Card -->
+    <div class="card margin margin-top">
+    <img src="/w3images/avatar_g.jpg" style="width:100%">
+      <div class="container white">
+        <h4><b>My Name</b></h4>
+        <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+      </div>
+    </div><hr>
+
+    <!-- Posts -->
+    <div class="card margin">
+      <div class="container padding">
+        <h4>Popular Posts</h4>
+      </div>
+      <ul class="ul hoverable white">
+        <li class="padding-16">
+          <img src="/w3images/workshop.jpg" alt="Image" class="left margin-right" style="width:50px">
+          <span class="large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="padding-16">
+          <img src="/w3images/gondol.jpg" alt="Image" class="left margin-right" style="width:50px">
+          <span class="large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li>
+        <li class="padding-16">
+          <img src="/w3images/skies.jpg" alt="Image" class="left margin-right" style="width:50px">
+          <span class="large">Dorum</span><br>
+          <span>Ultricies congue</span>
+        </li>
+        <li class="padding-16 hide-medium hide-small">
+          <img src="/w3images/rock.jpg" alt="Image" class="left margin-right" style="width:50px">
+          <span class="large">Mingsum</span><br>
+          <span>Lorem ipsum dipsum</span>
+        </li>
+      </ul>
+    </div>
+    <hr>
+
+    <!-- Labels / tags -->
+    <div class="card margin">
+      <div class="container padding">
+        <h4>Tags</h4>
+      </div>
+      <div class="container white">
+      <p><span class="tag black margin-bottom">Travel</span> <span class="tag light-grey small margin-bottom">New York</span> <span class="tag light-grey small margin-bottom">London</span>
+        <span class="tag light-grey small margin-bottom">IKEA</span> <span class="tag light-grey small margin-bottom">NORWAY</span> <span class="tag light-grey small margin-bottom">DIY</span>
+        <span class="tag light-grey small margin-bottom">Ideas</span> <span class="tag light-grey small margin-bottom">Baby</span> <span class="tag light-grey small margin-bottom">Family</span>
+        <span class="tag light-grey small margin-bottom">News</span> <span class="tag light-grey small margin-bottom">Clothing</span> <span class="tag light-grey small margin-bottom">Shopping</span>
+        <span class="tag light-grey small margin-bottom">Sports</span> <span class="tag light-grey small margin-bottom">Games</span>
+      </p>
+      </div>
+    </div>
+
+  <!-- END Introduction Menu -->
+  </div>
+
+  <!-- END GRID -->
+  </div><br>
+
+  <!-- END content -->
+  </div>
+
+
+</div>
+<!-- Footer -->
+<!-- <footer class="container dark-grey padding-32 margin-top">
+  <button class="button black disabled padding-large margin-bottom">Previous</button>
+  <button class="button black padding-large margin-bottom">Next »</button>
+
+</footer> -->
+<!-- _______________________________________________________________________________ -->
+
+ <!--==============about====about.scss===========================  -->
+      
+ <!--  ===========parallax=========about.scss================================= -->
+      <div class="parallax parallax-home">
+
+      </div>
+ <!--  ===========our music=========start=====music.scss================== -->
+      <section class="music text-center">
+        <div class="container">
+          <h2 class="our-music">Our Music</h2>
+          <div class="row justify-content-center no-gutters">
+            <div class="col-sm-3 col">
+              <%= image_tag ("dj1.jpg"), class:  "img-fluid "  %>
+              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
+            </div>
+            <div class="col-sm-3 col">
+              <%= image_tag ("dj1.jpg"), class:  "img-fluid "  %>
+              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
+            </div>
+            <div class="col-sm-3 col">
+              <%= image_tag ("dj1.jpg"), class:  "img-fluid "  %>
+              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
+            </div>
+          </div>
+
+          <div class="row justify-content-center no-gutters">
+            <div class="col-sm-3 col">
+              <%= image_tag ("dj1.jpg"), class:  "img-fluid "  %>
+              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
+            </div>
+            <div class="col-sm-3 col">
+              <%= image_tag ("dj1.jpg"), class:  "img-fluid "  %>
+              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
+            </div>
+            <div class="col-sm-3 col">
+              <%= image_tag ("dj1.jpg"), class:  "img-fluid "  %>
+              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
+            </div>
+          </div>
+        </div>
+      </section>
+ <!--  ===========our music==========music.scss====end=================== -->
+
+ <!--  ===========events== upcoming events====start======events.scss===================== -->
+      <section class="upcoming-shows">
+        <div class="container">
+          <h2 class="display-2">Upcoming Events</h2>
+          <div class="row no-gutters shows">
+            <div class="col-lg-3 col-md-6">
+              <div class="card border-0">
+                <%= image_tag ("skyline.jpg"), class:  "card-img img-fluid "  %>
+
+                <div class="card-img-overlay">
+                  <h3 class="show-title">The Rooftop</h3>
+                  <p class="address">Output, Brooklyn, NY</p>
+                  <p class="date"></i>07/06/2017</p>
+                  <p class="price"><small>$10.00</small></p>
+                  <a href="" class="btn btn-primary mt-auto">Buy Tickets</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card border-0">
+                <%= image_tag ("skyline.jpg"), class:  "card-img img-fluid "  %>
+
+                <div class="card-img-overlay">
+                  <h3 class="show-title">The Rooftop</h3>
+                  <p class="address">Output, Brooklyn, NY</p>
+                  <p class="date"></i>07/06/2017</p>
+                  <p class="price"><small>$10.00</small></p>
+                  <a href="" class="btn btn-primary mt-auto">Buy Tickets</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card border-0">
+                <%= image_tag ("skyline.jpg"), class:  "card-img img-fluid "  %>
+
+                <div class="card-img-overlay">
+                  <h3 class="show-title">The Rooftop</h3>
+                  <p class="address">Output, Brooklyn, NY</p>
+                  <p class="date"></i>07/06/2017</p>
+                  <p class="price"><small>$10.00</small></p>
+                  <a href="" class="btn btn-primary mt-auto">Buy Tickets</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card border-0">
+                <%= image_tag ("skyline.jpg"), class:  "card-img img-fluid "  %>
+
+                <div class="card-img-overlay">
+                  <h3 class="show-title">The Rooftop</h3>
+                  <p class="address">Output, Brooklyn, NY</p>
+                  <p class="date"></i>07/06/2017</p>
+                  <p class="price"><small>$10.00</small></p>
+                  <a href="" class="btn btn-primary mt-auto">Buy Tickets</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!--  ===========events== upcoming events====end=====events.scss============== -->
+
+<!--  ===========footer / soical media=======start===home.scss================= -->
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <p>Thrills Life Productions 2017</p>
+            </div>
+            <div class="col-lg-7">
+              <ul class="list-inline social-links">
+                  <li class="list-inline-item social-link"><a href="https://www.facebook.com/ThrillLifeProductions">Facebook</a></li>
+                  <li class="list-inline-item social-link"><a href="#">Twitter</a></li>
+                  <li class="list-inline-item social-link"><a href="https://www.instagram.com/thrill_life_productions/">Instagram</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+  <%= yield %>
+</body>
+<!--  ===========footer / soical media====end======home.scss================= -->
