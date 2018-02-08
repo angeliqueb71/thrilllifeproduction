@@ -8,6 +8,8 @@ body {
  font-family: sans-serif;
  font-weight: lighter;
  background-color: #1f1f1f;
+ margin: 0;
+ padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,7 +40,9 @@ h1, h2, h3, h4, h5, h6 {
   background-attachment: fixed;
   background-position: bottom center;
   padding-top: 20vh;
-  padding-bottom: 25vh;
+  padding-bottom: 50vh;
+  width: 100%;
+  height: 100%;
   opacity: 0.85;
 }
 
@@ -78,9 +82,17 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 7vh;
   padding-bottom: 7vh;
   margin: 16px!important;
-  vertical-align: middle;
-  border-style: none;
+
 }
+.element .style {
+    width: 100%;
+}
+
+// .card-img-top {
+//     vertical-align: middle;
+//     border-style: none;
+//   }
+
 
 .white, .hover-white:hover {
     color: #000;
@@ -110,12 +122,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .parallax-home {
-  background: image-url('desktop1.jpg');
+  background: image-url('skyline.jpg');
   background-attachment: fixed;
   height: 30vmax;
   background-size: 100%;
   background-position: center;
   display: block;
+  opacity: 0.85;
 }
 // parallax =========end====================
 
