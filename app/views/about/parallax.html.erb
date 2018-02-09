@@ -71,23 +71,63 @@
 
  <!--==============about====about.scss===========================  -->
 
-      <section class="about" <a class="nav-link" href="/about">About</a> >
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-6 about-title d-flex align-items-center justify-content-center">
-              <h2 class="display-2">About</h2>
-             </div>
-            <div class="col-lg-4 col-md-6 about-text d-flex flex-column justify-content-center">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            </div>
-          </div>  <!--/ROW -->
-        </div>  <!--/CONTAINER-FLUID ========band-members-position-->
-        <!--band-members===============  -->
-        <!-- note: .band-member in scss is noting wking remove 'bg-inverse' -->
-        
+       <section class="about">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col-sm-6 about-title d-flex align-items-center justify-content-center">
+               <h2 class="display-2"> <a href="/about">ABOUT</a></h2>
+              </div>
+             <div class="col-lg-4 col-md-6 about-text d-flex flex-column justify-content-center">
+               <p>Thrill Life Productions was created by Margarita Serrano in August of 2016.</p>
+               <p> After spending her early years in the nightlife industry she decided to take her love of music to another level.</p>
+               <p> Thrill Life Productions sheds the light on new and upcoming talent that often get sidelined due to the over population of main stream artists.</p>
+               <br>
+               <p>-- Margarita C. Serrano</p>
+               <p>Thrill Life Productions, LLC.</p>
+
+             </div>
+           </div>  <!--/ROW -->
+         </div>  <!--/CONTAINER-FLUID ========band-members-position-->
+         <!--band-members===============  -->
+         <!-- note: .band-member in scss is noting wking remove 'bg-inverse' -->
+         <div class="container text-center band-members">
+           <div class="row">
+             <div class="col-sm-4">
+               <div class="card bg-inverse border-0 band-member">
+                 <%= image_tag ("dj1.jpg"), class:  "card-img-top img-fluid "  %>
+                 <!-- <img class="card-img-top img-fluid" src="imgages/dj1.jpg"  alt="our dj's"> -->
+                 <div class="card-block">
+                   <h3 class="card-title text-primary band-member-name">DJ 1</h3>
+                   <p class="card-text band-member-position">DJ playing first set</p>
+                 </div>
+               </div>
+             </div>
+             <div class="col-sm-4">
+               <div class="card bg-inverse border-0 band-member">
+                 <%= image_tag ("dj2.jpg"), class:  "card-img-top img-fluid "  %>
+                 <!-- <img class="card-img-top img-fluid" src="images/dj2.jpg"  alt="our dj's"> -->
+                 <div class="card-block">
+                   <h3 class="card-title text-primary band-member-name">DJ 2</h3>
+                   <p class="card-text band-member-position"> playing 3rd set</p>
+                 </div>
+               </div>
+             </div>
+             <div class="col-sm-4">
+               <div class="card bg-inverse border-0 band-member">
+                 <%= image_tag ("djj2.jpg"), class:  "card-img-top img-fluid "  %>
+                 <!-- <img class="card-img-top img-fluid" src="imgages/djj2.jpg"  alt="our dj's"> -->
+                 <div class="card-block">
+                   <h3 class="card-title text-primary band-member-name">DJ 2</h3>
+                   <p class="card-text band-member-position"> playing it up</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <p class="music-cta">See something you like</p>
+         <a href="#" class="btn btn-primary">See our video clips</a>
+       </section> <!--/ABOUT -->
  <!--  ===========parallax=========about.scss================================= -->
       <div class="parallax parallax-home">
 
