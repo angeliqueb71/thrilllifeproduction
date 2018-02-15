@@ -20,13 +20,13 @@
 
 .show-title {
   font-family: sans-serif;
-  color: #262523;
+  color: white;
 }
 
 .show-info {
   display: flex;
   flex-direction: column;
-  color: #262523;
+  color: white;
 
 }
 // > * direct decend of show-info will get a margin 0
@@ -35,7 +35,7 @@
 }
 
 .address {
-  color: #262523;
+  color: white;
   font-weight: bold;
   margin-top: 1.25em;
 
@@ -46,7 +46,7 @@
 }
 
 .date {
-  color: #262523;
+  color: white;
   font-weight: bold;
   margin-top: 1.25em;
 
@@ -59,7 +59,7 @@
 }
 
 .price {
-  color: #262523;
+  color: white;
   font-weight: bold;
 
   small {

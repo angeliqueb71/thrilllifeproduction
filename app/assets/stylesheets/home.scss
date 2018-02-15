@@ -260,13 +260,13 @@ template {
   background-position: bottom center;
   padding-top: 20vh;
   padding-bottom: 50vh;
-  opacity: 0.85;
+  opacity: 0.75;
+  color: white;
 }
 
 .display {
   font-family: 'Orbitron', sans-serif;
-  font-size: 4rem;
-  color: #C6CED1;
+  font-size: 3rem;
 }
 
 .lead {
@@ -323,11 +323,12 @@ template {
 .parallax-home {
   background: image-url('skyline.jpg');
   background-attachment: fixed;
-  height: 30vmax;
+  height: 40vmax;
   background-size: 100%;
   background-position: center;
   display: block;
-  opacity: 0.85;
+  opacity: 0.75;
+  color: white;
 }
 // parallax =========end====================
 
