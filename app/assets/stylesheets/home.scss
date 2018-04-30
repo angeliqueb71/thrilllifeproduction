@@ -254,14 +254,14 @@ template {
 
 //header ==hero text-center=====start==========
 .hero {
-  background: image-url('dj1.jpg');
-  background-size: cover;
+  background: image-url('do_it_4.jpg');
+  background-size: contain;
   background-attachment: fixed;
   background-position: bottom center;
   padding-top: 20vh;
   padding-bottom: 50vh;
-  opacity: 0.75;
-  color: white;
+  // opacity: 0.75;
+  color: black;
 }
 
 .display {
@@ -312,7 +312,7 @@ template {
 .parallax {
   display: none;
   @include media-breakpoint-up(md){
-    height: 30vmax;
+    height: 50vmax;
     background-size: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -328,7 +328,7 @@ template {
   background-position: center;
   display: block;
   opacity: 0.75;
-  color: white;
+  color: black;
 }
 // parallax =========end====================
 
