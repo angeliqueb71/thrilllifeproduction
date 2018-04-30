@@ -255,7 +255,7 @@ template {
 //header ==hero text-center=====start==========
 .hero {
   background: image-url('do_it_4.jpg');
-  background-size: contain;
+  background-size: 100% auto;
   background-attachment: fixed;
   background-position: bottom center;
   padding-top: 20vh;
