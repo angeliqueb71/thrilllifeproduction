@@ -254,12 +254,12 @@ template {
 
 //header ==hero text-center=====start==========
 .hero {
-  background: image-url('do_it_4.jpg');
-  background-size: cover;
+  background-color: black;
+  background-size: 100%;
   background-attachment: fixed;
   background-position: bottom center;
-  padding-top: 20vh;
-  padding-bottom: 50vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   // opacity: 0.75;
   color: black;
 }
