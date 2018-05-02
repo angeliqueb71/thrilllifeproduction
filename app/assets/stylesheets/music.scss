@@ -6,6 +6,7 @@
 // our music ===========start====================
 .our-music {
   font-family: 'Orbitron', sans-serif;
+
 }
 .music {
   margin-top: 0em;
@@ -28,4 +29,29 @@
   margin-top: 2em;
   color: #f8f9fa;
 }
+
+// parallax =========start====================
+
+.parallax {
+  display: none;
+  @include media-breakpoint-up(md){
+    height: 50vmax;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    display: block;
+  }
+}
+
+.parallax-music {
+  background: image-url('desktop1.jpg');
+  background-attachment: fixed;
+  height: 40vmax;
+  background-size: 100%;
+  background-position: center;
+  display: block;
+  opacity: 0.85;
+  color: black;
+}
+// parallax =========end====================
 // our music ===========end====================
