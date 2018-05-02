@@ -42,7 +42,7 @@
                 <a class="nav-link" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/music">Artist</a>
+                <a class="nav-link" href="#about">Artist</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="/events">Upcoming Events</a>
@@ -68,10 +68,12 @@
   <div class="w3-row">
     <div class="w3-half">
       <img src="./assets/may_3_djHerna.jpg" style="width:100%">
+      <a href="https://www.residentadvisor.net/events/1092428?p=ThrillLife">
+      <img src="./assets/man_vs_drum.png" style="width:100%"></a>
       <img src="./assets/may_5_djCarlo.jpg" style="width:100%">
       <img src="./assets/may_5_djFloorplan.jpg" style="width:100%">
       <img src="./assets/may_11_djLee.jpg" style="width:100%"><br>
-      <img src="./assets/do_it_4.jpg" style="width:100%">
+
 
 
     </div>
@@ -93,28 +95,61 @@
 
 <!-- Footer / About Section -->
 <footer class="w3-light-grey w3-padding-64 w3-center" id="about">
-  <h2>Man vs Drum: Carlos Manaça</h2>
-  <img src="./assets/man_vs_drum.png" class="w3-image w3-padding-32" width="1200" height="700">
-  <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
-    <p>Man vs Drum is a party that highlights live percussion and all that dare to face off against the drum on the dance floor, leaving a vibe and overall experience like no other.</p>
-    <p class="w3-large w3-text-pink">Line-up <br>Carlos Manaça
-      <br><a href="https://www.residentadvisor.net/dj/salivacommandos">Saliva Commandos</a>   <br>  Mike Sullivan!</p>
+  <!--ARTIST SECTION  -->
+  <section class="hero text-center">
+     <div class="container">
+          <h2 class="our-music"><a href="#about"> <br>ARTIST</a></h2>
+          <div class="row justify-content-center no-gutters">
+            <div class="col-sm-3 col">
+              <a href="https://soundcloud.com/djalexandertechnique">
+              <%= image_tag ("djAlex.png"), class:  "img-fluid "  %>
+            </a>
+              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
+            </div>
+            <div class="col-sm-3 col">
+              <a href="https://soundcloud.com/seankrames?utm_source=soundcloud&utm_campaign=share&utm_medium=email">
+              <%= image_tag ("djKrames3.png"), class:  "img-fluid "  %>
+            </a>
+              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
+            </div>
+            <div class="col-sm-3 col">
+              <a href="https://soundcloud.com/carlosdacosta">
+              <%= image_tag ("djCarlos.png"), class:  "img-fluid "  %>
+              </a>
+              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
+            </div>
+            <div class="col-sm-3 col">
+              <a href="https://soundcloud.com/mvxsprvuer">
+              <%= image_tag ("djMax.png"), class:  "img-fluid "  %>
+            </a>
+              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
+            </div>
+          </div>
+          </div>
+          </div>
+        <br><br>
+      </section><br><br>
+  <!--ARTIST SECTION END  -->
+    <h2>Man vs Drum: Carlos Manaça</h2>
+    <img src="./assets/man_vs_drum.png" class="w3-image w3-padding-32" width="1200" height="700">
+    <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
+      <p>Man vs Drum is a party that highlights live percussion and all that dare to face off against the drum on the dance floor, leaving a vibe and overall experience like no other.</p>
+      <p class="w3-large w3-text-pink">Line-up <br>Carlos Manaça
+        <br><a href="https://www.residentadvisor.net/dj/salivacommandos">Saliva Commandos</a>   <br>  Mike Sullivan!</p>
 
-  </form>
-  <br>
-  <h2>Feel it: Ari El & D-Unity</h2>
-  <img src="./assets/may_11.jpg" class="w3-image w3-padding-32" width="1200" height="400">
-  <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
-    <p>Ari El's brand “Feel it” returns to NY’s staple club Cielo. The purpose behind Feel it is for everyone to come together under 1 roof and have an experience that we can all Feel. For this installment Ari El welcomes top techno producer D-Unity.</p>
-    <p class="w3-large w3-text-pink">Line-up <br>
-      <a href="https://www.residentadvisor.net/dj/ariel-us">Ari El</a>
-      <br><a href="https://www.residentadvisor.net/dj/d-unity">D-Unity</a>
-      <br><a href="https://www.residentadvisor.net/dj/diegogarcia">Diego Garcia</a><br>
-   </p>
-
-  </form>
-
-</footer>
+    </form>
+    <br>
+    <h2>Feel it: Ari El & D-Unity</h2>
+    <img src="./assets/may_11.jpg" class="w3-image w3-padding-32" width="1200" height="400">
+    <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
+      <p>Ari El's brand “Feel it” returns to NY’s staple club Cielo. The purpose behind Feel it is for everyone to come together under 1 roof and have an experience that we can all Feel. For this installment Ari El welcomes top techno producer D-Unity.</p>
+      <p class="w3-large w3-text-pink">Line-up <br>
+        <a href="https://www.residentadvisor.net/dj/ariel-us">Ari El</a>
+        <br><a href="https://www.residentadvisor.net/dj/d-unity">D-Unity</a>
+        <br><a href="https://www.residentadvisor.net/dj/diegogarcia">Diego Garcia</a><br>
+     </p>
+    </form>
+  </footer>
 
 
 

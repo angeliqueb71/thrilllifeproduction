@@ -19,6 +19,7 @@ html {
 }
 
 body {
+ // background: image-url('nyc_map.png');
  background-color: #f7f7f7;
  margin: 0;
  padding: 0;
@@ -260,7 +261,7 @@ template {
   background-position: bottom center;
   padding-top: 1vh;
   padding-bottom: 1vh;
-  // opacity: 0.75;
+  opacity: 0.75;
   color: black;
 }
 

@@ -4,54 +4,54 @@
 
 
 // our music ===========start====================
-.our-music {
-  font-family: 'Orbitron', sans-serif;
-
-}
-.music {
-  margin-top: 0em;
-  margin-bottom: 0em;
-  background-color: black;
-}
-
-.music-container {
-  background: #f7f7f7;
-  box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
-  padding-top: 8vh;
-  padding-bottom: 8vh;
-}
-
-.music-title {
-  margin-bottom: 0.5em;
-}
-
-.music-cta {
-  margin-top: 2em;
-  color: #f8f9fa;
-}
-
-// parallax =========start====================
-
-.parallax {
-  display: none;
-  @include media-breakpoint-up(md){
-    height: 50vmax;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    display: block;
-  }
-}
-
-.parallax-music {
-  background: image-url('desktop1.jpg');
-  background-attachment: fixed;
-  height: 40vmax;
-  background-size: 100%;
-  background-position: center;
-  display: block;
-  opacity: 0.85;
-  color: black;
-}
+// .our-music {
+//   font-family: 'Orbitron', sans-serif;
+//
+// }
+// .music {
+//   margin-top: 0em;
+//   margin-bottom: 0em;
+//   background-color: black;
+// }
+//
+// .music-container {
+//   background: #f7f7f7;
+//   box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
+//   padding-top: 8vh;
+//   padding-bottom: 8vh;
+// }
+//
+// .music-title {
+//   margin-bottom: 0.5em;
+// }
+//
+// .music-cta {
+//   margin-top: 2em;
+//   color: #f8f9fa;
+// }
+//
+// // parallax =========start====================
+//
+// .parallax {
+//   display: none;
+//   @include media-breakpoint-up(md){
+//     height: 50vmax;
+//     background-size: 100%;
+//     background-attachment: fixed;
+//     background-position: center;
+//     display: block;
+//   }
+// }
+//
+// .parallax-music {
+//   background: image-url('desktop1.jpg');
+//   background-attachment: fixed;
+//   height: 40vmax;
+//   background-size: 100%;
+//   background-position: center;
+//   display: block;
+//   opacity: 0.85;
+//   color: black;
+// }
 // parallax =========end====================
 // our music ===========end====================

@@ -12,6 +12,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
     <!-- Bootstrap CSS -->
@@ -39,7 +42,7 @@
                 <a class="nav-link" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/music">Artist</a>
+                <!-- <a class="nav-link" href="/music">Artist</a> -->
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="/events">Upcoming Events</a>
@@ -76,7 +79,7 @@
          <div class="container-fluid">
            <div class="row">
              <div class="col-sm-6 about-title d-flex align-items-center justify-content-center">
-
+                <%= image_tag ("do_it_4.jpg"), class:  "img-fluid " %>
               </div>
              <div class="col-lg-4 col-md-6 about-text d-flex flex-column justify-content-center">
                <h2 class="display-2"> <a href="/about">ABOUT</a></h2>
@@ -96,140 +99,69 @@
            <div class="row">
              <div class="col-sm-4">
                <div class="card bg-inverse border-0 band-member">
-                 <%= image_tag ("dj1.jpg"), class:  "card-img-top img-fluid "  %>
+                 <%= image_tag ("GT7A2206.jpg"), class:  "card-img-top img-fluid "  %>
                  <!-- <img class="card-img-top img-fluid" src="imgages/dj1.jpg"  alt="our dj's"> -->
                  <div class="card-block">
-                   <h3 class="card-title text-primary band-member-name">DJ 1</h3>
-                   <p class="card-text band-member-position">DJ playing first set</p>
+                   <h3 class="card-title text-primary band-member-name"></h3>
+                   <p class="card-text band-member-position"></p>
                  </div>
                </div>
              </div>
              <div class="col-sm-4">
                <div class="card bg-inverse border-0 band-member">
-                 <%= image_tag ("dj2.jpg"), class:  "card-img-top img-fluid "  %>
+                 <%= image_tag ("GT7A2219.jpg"), class:  "card-img-top img-fluid "  %>
                  <!-- <img class="card-img-top img-fluid" src="images/dj2.jpg"  alt="our dj's"> -->
                  <div class="card-block">
-                   <h3 class="card-title text-primary band-member-name">DJ 2</h3>
-                   <p class="card-text band-member-position"> playing 3rd set</p>
+                   <h3 class="card-title text-primary band-member-name"></h3>
+                   <p class="card-text band-member-position"></p>
                  </div>
                </div>
              </div>
              <div class="col-sm-4">
                <div class="card bg-inverse border-0 band-member">
-                 <%= image_tag ("djj2.jpg"), class:  "card-img-top img-fluid "  %>
+                 <%= image_tag ("GT7A2213.jpg"), class:  "card-img-top img-fluid "  %>
                  <!-- <img class="card-img-top img-fluid" src="imgages/djj2.jpg"  alt="our dj's"> -->
                  <div class="card-block">
-                   <h3 class="card-title text-primary band-member-name">DJ 2</h3>
-                   <p class="card-text band-member-position"> playing it up</p>
+                   <h3 class="card-title text-primary band-member-name"></h3>
+                   <p class="card-text band-member-position"> </p>
                  </div>
                </div>
              </div>
            </div>
          </div>
-         <p class="music-cta">See something you like</p>
-         <a href="#" class="btn btn-primary">See our video clips</a>
+         <p class="music-cta"></p>
+         <a href="/events" class="btn btn-primary">see our upcoming events</a>
        </section> <!--/ABOUT -->
  <!--  ===========parallax=========about.scss================================= -->
       <div class="parallax parallax-home">
 
       </div>
  <!--  ===========our music=========start=====music.scss================== -->
-      <section class="music text-center">
-        <div class="container">
-          <h2 class="our-music">Our Music</h2>
-          <div class="row justify-content-center no-gutters">
-            <div class="col-sm-3 col">
-              <%= image_tag ("dj1.jpg"), class:  "img-fluid "  %>
-              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
-            </div>
-            <div class="col-sm-3 col">
-              <%= image_tag ("dj1.jpg"), class:  "img-fluid "  %>
-              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
-            </div>
-            <div class="col-sm-3 col">
-              <%= image_tag ("dj1.jpg"), class:  "img-fluid "  %>
-              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
-            </div>
-          </div>
-
-          <div class="row justify-content-center no-gutters">
-            <div class="col-sm-3 col">
-              <%= image_tag ("dj1.jpg"), class:  "img-fluid "  %>
-              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
-            </div>
-            <div class="col-sm-3 col">
-              <%= image_tag ("dj1.jpg"), class:  "img-fluid "  %>
-              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
-            </div>
-            <div class="col-sm-3 col">
-              <%= image_tag ("dj1.jpg"), class:  "img-fluid "  %>
-              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
-            </div>
-          </div>
+   <footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+    <h2>About</h2>
+     <img src="/w3images/boy.jpg" class="w3-image w3-padding-32" width="300" height="300">
+      <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
+       <p class="w3-large w3-text-pink">Do not hesitate to contact me!</p>
+        <div class="w3-section">
+         <label><b>Name</b></label>
+         <input class="w3-input w3-border" type="text" required name="Name">
         </div>
-      </section>
+        <div class="w3-section">
+         <label><b>Email</b></label>
+         <input class="w3-input w3-border" type="text" required name="Email">
+        </div>
+        <div class="w3-section">
+         <label><b>Message</b></label>
+         <input class="w3-input w3-border" required name="Message">
+        </div>
+    <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+    </form>
+    <br>
+  </footer>
  <!--  ===========our music==========music.scss====end=================== -->
 
  <!--  ===========events== upcoming events====start======events.scss===================== -->
-      <section class="upcoming-shows">
-        <div class="container">
-          <h2 class="display">Upcoming Events</h2>
-          <div class="row no-gutters shows">
-            <div class="col-lg-3 col-md-6">
-              <div class="card border-0">
-                <%= image_tag ("skyline.jpg"), class:  "card-img img-fluid "  %>
 
-                <div class="card-img-overlay">
-                  <h3 class="show-title">The Rooftop</h3>
-                  <p class="address">Output, Brooklyn, NY</p>
-                  <p class="date"></i>07/06/2017</p>
-                  <p class="price"><small>$10.00</small></p>
-                  <a href="" class="btn btn-primary mt-auto">Buy Tickets</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card border-0">
-                <%= image_tag ("skyline.jpg"), class:  "card-img img-fluid "  %>
-
-                <div class="card-img-overlay">
-                  <h3 class="show-title">The Rooftop</h3>
-                  <p class="address">Output, Brooklyn, NY</p>
-                  <p class="date"></i>07/06/2017</p>
-                  <p class="price"><small>$10.00</small></p>
-                  <a href="" class="btn btn-primary mt-auto">Buy Tickets</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card border-0">
-                <%= image_tag ("skyline.jpg"), class:  "card-img img-fluid "  %>
-
-                <div class="card-img-overlay">
-                  <h3 class="show-title">The Rooftop</h3>
-                  <p class="address">Output, Brooklyn, NY</p>
-                  <p class="date"></i>07/06/2017</p>
-                  <p class="price"><small>$10.00</small></p>
-                  <a href="" class="btn btn-primary mt-auto">Buy Tickets</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card border-0">
-                <%= image_tag ("skyline.jpg"), class:  "card-img img-fluid "  %>
-
-                <div class="card-img-overlay">
-                  <h3 class="show-title">The Rooftop</h3>
-                  <p class="address">Output, Brooklyn, NY</p>
-                  <p class="date"></i>07/06/2017</p>
-                  <p class="price"><small>$10.00</small></p>
-                  <a href="" class="btn btn-primary mt-auto">Buy Tickets</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 <!--  ===========events== upcoming events====end=====events.scss============== -->
 
 <!--  ===========footer / soical media=======start===home.scss================= -->
