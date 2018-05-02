@@ -19,7 +19,8 @@ html {
 }
 
 body {
- // background: image-url('nyc_map.png');
+ background: image-url('bg_1.png');
+ background-size: cover;
  background-color: #f7f7f7;
  margin: 0;
  padding: 0;
@@ -313,7 +314,7 @@ template {
 .parallax {
   display: none;
   @include media-breakpoint-up(md){
-    height: 50vmax;
+    height: 30vmax;
     background-size: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -322,13 +323,13 @@ template {
 }
 
 .parallax-home {
-  background: image-url('skyline.jpg');
+  background: image-url('thrill_life_floor.png');
   background-attachment: fixed;
   height: 40vmax;
   background-size: 100%;
   background-position: center;
   display: block;
-  opacity: 0.75;
+  // opacity: 0.75;
   color: black;
 }
 // parallax =========end====================
