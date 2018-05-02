@@ -19,7 +19,7 @@ html {
 }
 
 body {
- background: image-url('bg_1.png');
+ background: image-url('bg_3.jpg');
  background-size: cover;
  background-color: #f7f7f7;
  margin: 0;
@@ -240,6 +240,8 @@ template {
 // nav =========start====================
 .navbar {
   font-family: 'Orbitron', sans-serif;
+  background: image-url('bg_3.jpg');
+  background-size: 30%;
 }
 
 .navbar-inverse .navbar-brand {
