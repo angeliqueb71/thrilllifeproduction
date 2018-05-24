@@ -1,6 +1,146 @@
 <!-- <h1>Music#music</h1>
-<p>Find me in app/views/music/music.html.erb</p> -->
+<!-This is the Artist page-  -->
+<!-- <p>Find me in app/views/music/music.html.erb</p> -->
 
 <!--  ===========our music======start======= -->
 <!-- <h1>Home#thrill_index</h1>
 <p>Find me in app/views/home/thrill_index.html.erb</p> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- Adobe typekit fonts-->
+    <script src="https://use.typekit.net/qcd8sjb.js"></script>
+    <script>try{Typekit.load({ async: true});}catch(e){}</script>
+
+  </head>
+  <body>
+     <!-- navbar -->
+     <nav class="navbar fixed-top navbar-toggleable-sm navbar-dark bg-faded">
+       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+         <a class="navbar-brand" href="/"><img src="./assets/record3ps.png" style="width:9%">Thrill Life Productions</a>
+           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+             <ul class="navbar-nav">
+               <li class="nav-item active">
+               <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link" href="/about">About</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link" href="music">Artist</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link" href="/events">Merchandise</a>
+           </li>
+         </ul>
+       </div>
+     </nav>
+    <!--header with btn  -->
+
+<!--  ===========events== upcoming events====end=====events.scss============== -->
+
+<!-- Footer / About Section -->
+<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+  <!--ARTIST SECTION  -->
+  <section class="hero text-center">
+     <div class="container">
+          <h2 class="our-music"><a href="/music"> <br>ARTIST</a></h2>
+          <div class="row justify-content-center no-gutters">
+            <div class="col-sm-3 col">
+              <a href="https://soundcloud.com/djalexandertechnique">
+              <%= image_tag ("djAlex.png"), class:  "img-fluid "  %>
+            </a>
+              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
+            </div>
+            <div class="col-sm-3 col">
+              <a href="https://soundcloud.com/seankrames?utm_source=soundcloud&utm_campaign=share&utm_medium=email">
+              <%= image_tag ("djKrames3.png"), class:  "img-fluid "  %>
+            </a>
+              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
+            </div>
+            <div class="col-sm-3 col">
+              <a href="https://soundcloud.com/carlosdacosta">
+              <%= image_tag ("djCarlos.png"), class:  "img-fluid "  %>
+              </a>
+              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
+            </div>
+            <div class="col-sm-3 col">
+              <a href="https://soundcloud.com/mvxsprvuer">
+              <%= image_tag ("djMax.png"), class:  "img-fluid "  %>
+            </a>
+              <!-- <img class="img-fluid"src="img/dj1.jpg" alt=""> -->
+            </div>
+          </div>
+          </div>
+          </div>
+        <br><br>
+      </section><br><br>
+  <!--ARTIST SECTION END  -->
+    <h2>Man vs Drum: Carlos Manaça</h2>
+    <img src="./assets/man_vs_drum.png" class="w3-image w3-padding-32" width="1200" height="700">
+    <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
+      <p>Man vs Drum is a party that highlights live percussion and all that dare to face off against the drum on the dance floor, leaving a vibe and overall experience like no other.</p>
+      <p class="w3-large w3-text-pink">Line-up <br>Carlos Manaça
+        <br><a href="https://www.residentadvisor.net/dj/salivacommandos">Saliva Commandos</a>   <br>  Mike Sullivan!</p>
+
+    </form>
+    <br>
+    <h2>Feel it: Ari El & D-Unity</h2>
+    <img src="./assets/may_11.jpg" class="w3-image w3-padding-32" width="1200" height="400">
+    <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
+      <p>Ari El's brand “Feel it” returns to NY’s staple club Cielo. The purpose behind Feel it is for everyone to come together under 1 roof and have an experience that we can all Feel. For this installment Ari El welcomes top techno producer D-Unity.</p>
+      <p class="w3-large w3-text-pink">Line-up <br>
+        <a href="https://www.residentadvisor.net/dj/ariel-us">Ari El</a>
+        <br><a href="https://www.residentadvisor.net/dj/d-unity">D-Unity</a>
+        <br><a href="https://www.residentadvisor.net/dj/diegogarcia">Diego Garcia</a><br>
+     </p>
+    </form>
+  </footer>
+
+
+
+<!--  ===========footer / soical media=======start===home.scss================= -->
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <p>Thrills Life Productions 2017</p>
+            </div>
+            <div class="col-lg-7">
+              <ul class="list-inline social-links">
+                  <li class="list-inline-item social-link"><a href="https://www.facebook.com/ThrillLifeProductions">Facebook</a></li>
+                  <li class="list-inline-item social-link"><a href="https://twitter.com/THRILLEST_1">Twitter</a></li>
+                  <li class="list-inline-item social-link"><a href="https://www.instagram.com/thrill_life_productions/">Instagram</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+  <%= yield %>
+</body>
+<!--  ===========footer / soical media====end======home.scss================= -->
