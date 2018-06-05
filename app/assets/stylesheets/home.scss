@@ -359,9 +359,8 @@ footer {
 
 
 .social-link:not(:first-of-type)::before {
-  content: '/';
+  // content: '/';
   display: inline-block;
-  // color: rgba($gray-light, 0.4);
   color: lightgray;
 }
 
