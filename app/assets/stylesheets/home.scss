@@ -258,6 +258,7 @@ template {
 // nav =========end====================
 
 //header ==hero text-center=====start==========
+// This controls the instagam section on the about page
 .hero {
   background-color: black;
   background-size: 100%;
@@ -268,13 +269,14 @@ template {
   opacity: 0.75;
   color: black;
 }
+// THis controls the check out new dad hats on the home
 
 .hero-dad {
   background-size: 100%;
   background-attachment: fixed;
   background-position: top center;
-  padding-top: 1vh;
-  padding-bottom: 4vh;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
 }
 
 .display {
@@ -325,7 +327,7 @@ template {
 .parallax {
   display: none;
   @include media-breakpoint-up(md){
-    height: 30vmax;
+    height: 50vmax;
     background-size: 100%;
     background-attachment: fixed;
     background-position: center;
