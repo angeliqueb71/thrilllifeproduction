@@ -257,6 +257,26 @@ template {
 }
 // nav =========end====================
 
+// video - by making fixed covers all of events on home page - vide0
+.background-wrap{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+#boat_event {
+  position: fixed;
+  top: 0;
+  left:0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+// end of video
+
 //header ==hero text-center=====start==========
 // This controls the instagam section on the about page
 .hero {
