@@ -47,6 +47,10 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
 end
+#  You set your `config.assets.compile = true` in production
+group :assets do
+         gem 'turbo-sprockets-rails3'
+ end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
