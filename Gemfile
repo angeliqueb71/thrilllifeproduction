@@ -52,6 +52,10 @@ group :assets do
          gem 'turbo-sprockets-rails3'
  end
 
+group :development do
+  gem 'popper_js', '>= 1.12.3'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
