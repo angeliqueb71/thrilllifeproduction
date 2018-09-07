@@ -53,7 +53,7 @@ group :assets do
  end
 
 group :development do
-  gem 'popper_js', '>= 1.12.3'
+  gem 'popper_js', '~> 1.14.3'
 end
 
 group :development, :test do
