@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.4.0'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -42,18 +41,10 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'bootstrap', '~> 4.1.3'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
-end
-#  You set your `config.assets.compile = false` in production
-group :assets do
-         gem 'turbo-sprockets-rails3'
- end
-
-group :development do
-  gem 'popper_js', '~> 1.14.3'
 end
 
 group :development, :test do
