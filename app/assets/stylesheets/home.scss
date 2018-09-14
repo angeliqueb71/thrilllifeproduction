@@ -55,10 +55,6 @@ body {
   margin-top: -50px;
 }
 
-#artist{
-  background: url('./assets/instagram_1.png')
-}
-
 #faq .card {
   border: #444;
 }
@@ -144,7 +140,7 @@ body {
 }
 
 .parallax-home {
-  background: image-url('instagram_44.png');
+  background: image-url('./assets/instagram_44.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 20vmax;
