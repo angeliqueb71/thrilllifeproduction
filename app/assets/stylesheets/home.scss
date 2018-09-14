@@ -43,6 +43,15 @@ body {
   color: #fff;
 }
 
+#home-header {
+  height: 300px;
+  background: url('../assets/boris_logo.png');
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  padding-top: 50px;
+}
+
 #page-header {
   height: 300px;
   background-position: 0 -360px;
