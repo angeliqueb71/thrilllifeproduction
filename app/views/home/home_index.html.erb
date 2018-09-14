@@ -130,15 +130,15 @@
       <a href="https://www.facebook.com/pg/ThrillLifeProductions/events/?ref=page_internal">
       <img src="./assets/09_08_JRoman.jpeg" style="width:100%"></a>
       <a href="https://www.facebook.com/pg/ThrillLifeProductions/events/?ref=page_internal">
-      <img src="./assets/sho.png" style="width:100%"></a>
+      <img src="./assets/09_08_JRoman.jpeg" style="width:100%"></a>
+
 
 
     </div>
 
     <div class="w3-half">
-
       <a href="https://www.facebook.com/pg/ThrillLifeProductions/events/?ref=page_internal">
-      <img src="./assets/09_08_JRoman.jpeg" style="width:100%"></a>
+      <img src="./assets/sho.png" style="width:100%"></a>
       <a href="https://www.facebook.com/pg/ThrillLifeProductions/events/?ref=page_internal">
       <img src="./assets/sho3.png" style="width:100%"></a>
 
@@ -149,15 +149,35 @@
 </div>
 
 <!-- Footer / About Section -->
-<footer class="w3-light-black w3-padding-25 w3-center" id="about">
-  <!--ARTIST SECTION  -->
+<footer class="w3-light-black w3-padding-25 w3-center text-white" id="about">
+  <!--<!-VIDEO PLAY -->
   <section class="hero text-center">
-     <div class="container">
-          <h2 class="our-music"><a href="/events"> <br><b>SHOP OUR MERCHANDISE</b></a></h2><br><br>
-
-      </section>
-  <!--ARTIST SECTION END  -->
+    <div class="container"><br>
+      <%= image_tag ("boris_logo.png"), class:  "img-fluid "  %>
+      <h4 class="our-music text-white">Transmissions Radio by Boris </h4><br>
+      <a href="" class=" video" data-video="https://www.youtube.com/embed/Zc9mLrxX9-8" data-toggle="modal"   data-target="#videoModal">
+           <i class="fas fa-play fa-3x"></i>
+         </a><br><br>
+           <p class="our-music text-white ">A fresh and 'home made' radio show straight from NYC hosted by Boris with the most special techno guests in the mix. The show is syndicated worldwide by Syndicast (www.syndicast.co.uk)</p>
+        <br><br>
+      </div>
+    </section>
+  <!--Video SECTION END  -->
   </footer>
+
+  <!-- VIDEO MODAL -->
+  <div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -184,6 +204,31 @@
     </div>
   </div>
 </footer>
+
+<script>
+
+    // Lightbox Init
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+
+    // Video Play
+    $(function () {
+      // Auto play modal video
+      $(".video").click(function () {
+        var theModal = $(this).data("target"),
+          videoSRC = $(this).attr("data-video"),
+          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.close').click(function () {
+          $(theModal + ' iframe').attr('src', videoSRC);
+        });
+      });
+    });
+
+  </script>
+
 
 
     <!--Bootstrap JS  -->
