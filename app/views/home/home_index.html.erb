@@ -137,68 +137,30 @@
   </div>
 </div>
 
-<!-- End Page Content -->
-</div>
 
-<!-- Footer / About Section -->
-
-<!-- VIDEO MODAL -->
 
 <!-- ===========footer / soical media=======start===home.scss================= -->
-
 <footer>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-5">
-      <p>Thrills Life Productions 2017</p>
-    </div>
-    <div class="col-lg-7">
-      <ul class="list-inline social-links">
-        <li class="list-inline-item social-link">
-          <a href="https://www.facebook.com/ThrillLifeProductions">
-            <i class="fab fa-facebook" style="font-size:25px;color:white"></a>
-          </i>
-        </li>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <p>Thrills Life Productions 2017</p>
+      </div>
+      <div class="col-lg-7">
+        <ul class="list-inline social-links">
+            <li class="list-inline-item social-link">
+                <a href="https://www.facebook.com/ThrillLifeProductions"><i class="fab fa-facebook" style="font-size:25px;color:white"></a></i></li>
 
-        <li class="list-inline-item social-link">
-          <a href="https://twitter.com/THRILLEST_1">
-            <i class="fab fa-twitter" style="font-size:25px;color:white"></a>
-          </i>
-        </li>
+            <li class="list-inline-item social-link">
+                <a href="https://twitter.com/THRILLEST_1"><i class="fab fa-twitter" style="font-size:25px;color:white"></a></i></li>
 
-        <li class="list-inline-item social-link">
-          <a href="https://www.instagram.com/thrill_life_productions/">
-            <i class="fab fa-instagram" style="font-size:25px;color:white"></a>
-          </i>
-        </li>
-      </ul>
+            <li class="list-inline-item social-link">
+              <a href="https://www.instagram.com/thrill_life_productions/"><i class="fab fa-instagram" style="font-size:25px;color:white"></a></i></li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 </footer>
-
-<script>
-
-// Lightbox Init
-$(document).on('click', '[data-toggle="lightbox"]', function (event) {
-  event.preventDefault();
-  $(this).ekkoLightbox();
-});
-
-// Video Play
-$(function () {
-  // Auto play modal video
-  $(".video").click(function () {
-    var theModal = $(this).data("target"),
-      videoSRC = $(this).attr("data-video"),
-      videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
-    $(theModal + ' iframe').attr('src', videoSRCauto);
-    $(theModal + ' button.close').click(function () {
-      $(theModal + ' iframe').attr('src', videoSRC);
-    });
-  });
-});
-</script>
 
 <!--Bootstrap JS -->
 <!--jQuery first(go to https://code.jquery.com for link ), then Popper.js, then Bootstrap JS -->
