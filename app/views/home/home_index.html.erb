@@ -2,7 +2,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
     <title>Thrill Life Productions - https://www.thrillin4alivin.com/</title>
 
     <!-- Required meta tags -->
@@ -28,43 +27,9 @@
       name="keywords"
       content="Margarita Serrano - Founder, www.facebook.com/ThrillLifeProductions, People,nightlifepersonal,new york nightlifes,thrilllifeproduction,margarita, #doit4thethrill, #thrillin4alivin,hospitality, thrillin4alivin, PR, public relations, event planner, promoter, brooklyn, Terminator Records Night with Alexander Technique / Krames / Becka / Max Sprauer; at Elsewhere, New York · Becka, Alexander Technique, Margarita Serrano - Founder - Thrill Life Productions | LinkedIn">
     <meta name="description" content="www.facebook.com/ThrillLifeProductions, Margarita Serrano - Founder, The biggest players and coolest places that make NYC nightlife tick.">
-
-    <!-- Adobe typekit fonts-->
-    <script src="https://use.typekit.net/qcd8sjb.js"></script>
-    <script>
-      try {
-        Typekit.load({async: true});
-      } catch (e) {}
-    </script>
-
   </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar fixed-top navbar-toggleable-sm navbar-dark bg-faded">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="/"><img src="./assets/record3ps.png" style="width:9%">Thrill Life Productions</a>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">EVENTS
-              <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/music">Artist</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/events">Merchandise</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!--header with btn -->
 
+  <body>
     <!-- ===========events== upcoming events====end=====events.scss============== -->
 
     <!-- !PAGE CONTENT! -->
@@ -130,7 +95,7 @@
 
       <div class="w3-half">
         <a href="https://www.facebook.com/pg/ThrillLifeProductions/events/?ref=page_internal">
-          <img src="./assets/nov_17_fair.jpg" style="width:100%"></a>
+          <img src="./assets/nov_17_fair.JPG" style="width:100%"></a>
         <a href="https://www.ticketfly.com/purchase/event/1786741?utm_source=Thrilllife">
           <img src="./assets/nov_23_feddieLegrand.jpg" style="width:100%"></a>
         <a href="https://www.ticketfly.com/purchase/event/1784437?utm_source=Thrilllife">
@@ -142,9 +107,6 @@
     <!-- End Page Content -->
   </div>
 
-  <!-- Footer / About Section -->
-
-  <!-- VIDEO MODAL -->
 
   <!-- ===========footer / soical media=======start===home.scss================= -->
 
@@ -179,29 +141,6 @@
     </div>
   </footer>
 
-  <script>
-
-    // Lightbox Init
-    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-      event.preventDefault();
-      $(this).ekkoLightbox();
-    });
-
-    // Video Play
-    $(function () {
-      // Auto play modal video
-      $(".video").click(function () {
-        var theModal = $(this).data("target"),
-          videoSRC = $(this).attr("data-video"),
-          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
-        $(theModal + ' iframe').attr('src', videoSRCauto);
-        $(theModal + ' button.close').click(function () {
-          $(theModal + ' iframe').attr('src', videoSRC);
-        });
-      });
-    });
-  </script>
-
   <!--Bootstrap JS -->
   <!--jQuery first(go to https://code.jquery.com for link ), then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -209,5 +148,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
   <%= yield %>
-</body>
+ </body>
+</html>
 <!-- ===========footer / soical media====end======home.scss================= -->
