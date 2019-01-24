@@ -8,7 +8,10 @@
 //==============about===start==============>
 
 .about {
-  background: #1f1f1f;
+  // background: #1f1f1f;
+  background: image-url('crowdBlur.png') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 .about-title {
