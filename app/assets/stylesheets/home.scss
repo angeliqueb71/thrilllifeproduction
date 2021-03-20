@@ -23,10 +23,10 @@ html {
 }
 
 body {
- background: image-url('bg_0.png');
+ // background: image-url('bg_0.png');
  // background-image: image-url('bg_3_color.png');
  background-size: cover;
- background-color: #f7f7f7;
+ // background-color: #f7f7f7;
  margin: 0;
  padding: 0;
 }
@@ -261,6 +261,153 @@ template {
 }
 // nav =========end====================
 
+//carousel
+.navbar .nav-item.active {
+  border-left: #444 3px solid;
+}
+
+.carousel-item {
+  height: 450px;
+}
+@media only screen and (max-width: 640px) {
+  .carousel-item {
+    height: 350px !important;
+  }
+}
+
+.carousel-item {
+  height: 450px;
+}
+@media only screen and (max-width: 640px) {
+  .carousel-item {
+    height: 350px !important;
+  }
+}
+.carousel-caption {
+  color: black;
+}
+
+.carousel-image-1 {
+  background: image-url('ss-splash1.jpg');
+  // background-size: cover;
+  background-size: 100%;
+}
+
+.carousel-image-2 {
+  background: image-url('ss-TLP1.jpg');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: image-url('ss-splash2.jpg');
+  background-size: cover;
+}
+
+//carousel end
+
+// home-hero
+// vh (viewport height)
+// ================================
+
+.home-hero {
+  background: image-url('ss-splash1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 10em 0;
+  text-transform: capitalize;
+  color: #FFF;
+  background-attachment: fixed;
+}
+
+@media (min-width: 60rem) {
+   .home-hero {
+     height: 100vh;
+     padding-top: 38vh;
+   }
+}
+
+// home-about
+// vw (viewport width)
+// outline-offset - like borders
+// helps to center (left: 50%;transform: translateX(-50%);)
+//
+// ================================
+
+//home-about
+
+
+.home-about-textbox {
+  position: relative;
+  background-color: #A6A297;
+  padding: 4em;
+  width: 100vw;
+  margin-left: -2.5%;
+  outline: 2px solid #A69D1F;
+  outline-offset: -2.5em;
+  color: #FFF;
+}
+
+.home-about-textbox h1 {
+  color: #1A2212;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: .75em;
+  background: #D63A99;
+  padding: 0 .145em;
+}
+
+@media (min-width: 25rem) {
+  h1 {
+    font-size: 2rem;
+  }
+  .home-about-textbox h1 {
+    top: .6em;
+    padding: 0 .325em;
+  }
+}
+
+@media (min-width: 60rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .home-about {
+    background: image-url('ss-splash1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    // padding: 5em;
+    padding-bottom: 10em;
+  }
+
+  // *****who we are- position
+  .home-about-textbox {
+    width: 45%;
+    padding: 5.5em;
+    outline-offset: -3.75em;
+    margin-left: -2.5%;
+    top: -5em;
+    text-align: left;
+    box-shadow: 0 0 3em 0 rgba(0,0,0,.2);
+  }
+  .home-about-textbox h1 {
+    top: .75em;
+    left: 6rem;
+    transform: translateX(0);
+    padding: 0 .10em;
+  }
+}
+
+//home-about end;
+
+.title-cta {
+  margin: 0 0 .5em;
+}
+
+.cta {
+  background-color: lightgray;
+  padding: 5em 0;
+}
+
 // video - by making fixed covers all of events on home page - vide0
 .video-header{
   position: absolute;
@@ -285,7 +432,8 @@ template {
 // This controls the instagam section on the about page
 .hero {
   background-color: black;
-  background-size: 100%;
+  // background: image-url('t_shirt-back2.png');
+  background-size: 80%;
   background-attachment: fixed;
   background-position: bottom center;
   padding-top: 1vh;
