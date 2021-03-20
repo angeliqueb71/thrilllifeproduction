@@ -6,9 +6,13 @@
 
 
 //==============about===start==============>
-
+h7 {
+  color: white;
+}
 .about {
-  background: #1f1f1f;
+  // background: #1f1f1f;
+  background: image-url('crowdBlur.png') !important;
+  background-size: cover !important;
 }
 
 .about-title {
@@ -26,31 +30,7 @@
     padding-bottom: 15vh;
   }
 }
-// band-members
 
-.band-members {
-  position: relative;
-}
-
-.band-member {
-  margin-bottom: 1.5em;
-  box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
-  background: #1f1f1f;
-  @include media-breakpoint-up(md) {
-    position: absolute;
-    top: -3em;
-    z-index: 100;
-  }
-}
-
-.band-member-name{
-  font-family: sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 0.25em;
-}
-
-.band-member-position {
-  color: lightgray;
-}
-
-//==============about===end================>
+// .linkemail {
+//   color: white !important;
+// }

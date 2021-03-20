@@ -75,6 +75,7 @@ pre {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: white !important;
 }
 
 a:active,
@@ -245,7 +246,6 @@ template {
 // nav =========start====================
 .navbar {
   font-family: 'Orbitron', sans-serif;
-  background: image-url('bg_0.png');
   background-size: 30%;
 }
 
@@ -409,6 +409,31 @@ template {
 }
 
 // video - by making fixed covers all of events on home page - vide0
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#video-play {
+  position: relative;
+  min-height: 50px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+
+#video-play a {
+  color: #fff;
+}
+
+// ------------------------------------------
 .video-header{
   position: absolute;
   right: 0;
@@ -3085,7 +3110,8 @@ vertical-align: text-bottom !important; }
 vertical-align: text-top !important; }
 
 .bg-faded {
-background-color: #171717; }
+// background-color: #171717; }
+background: image-url('rainbow.jpg') !important; }
 
 .bg-primary {
 background-color: #0275d8 !important; }

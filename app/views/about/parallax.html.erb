@@ -1,9 +1,7 @@
-<!-- <h1>About#parallax</h1>
-<p>Find me in app/views/about/parallax.html.erb</p> -->
+<!-- <h1>About#parallax</h1> <p>Find me in app/views/about/parallax.html.erb</p> -->
 
-<!--  ===========about======start================= -->
-<!-- <h1>Home#thrill_index</h1>
-<p>Find me in app/views/home/thrill_index.html.erb</p> -->
+<!-- ===========about======start================= -->
+<!-- <h1>Home#thrill_index</h1> <p>Find me in app/views/home/thrill_index.html.erb</p> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,12 +11,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
-    <!--font awesome v5.2  -->
+    <!--font awesome v5.2 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <!--Bootstrap CSS -->
@@ -26,14 +24,18 @@
 
     <meta name="author" content="Margarita Serrano">
 
-    <meta name="keywords" content="Margarita Serrano - Founder, www.facebook.com/ThrillLifeProductions, People,nightlifepersonal,new york nightlifes,thrilllifeproduction,margarita, do it 4 the thrill, thrillin 4 a livin,hospitality, thrillin, 4 a livin, PR, public relations, event planner, promoter, brooklyn, Terminator Records Night with Alexander Technique / Krames / Becka / Max Sprauer; at Elsewhere, New York · Becka, Alexander Technique, Margarita Serrano - Founder - Thrill Life Productions | LinkedIn">
+    <meta
+      name="keywords"
+      content="Margarita Serrano - Founder, www.facebook.com/ThrillLifeProductions, People,nightlifepersonal,new york nightlifes,thrilllifeproduction,margarita, do it 4 the thrill, thrillin 4 a livin,hospitality, thrillin, 4 a livin, PR, public relations, event planner, promoter, brooklyn, Terminator Records Night with Alexander Technique / Krames / Becka / Max Sprauer; at Elsewhere, New York · Becka, Alexander Technique, Margarita Serrano - Founder - Thrill Life Productions | LinkedIn">
     <meta name="description" content="www.facebook.com/ThrillLifeProductions, Margarita Serrano - Founder, The biggest players and coolest places that make NYC nightlife tick.">
-
-
 
     <!-- Adobe typekit fonts-->
     <script src="https://use.typekit.net/qcd8sjb.js"></script>
-    <script>try{Typekit.load({ async: true});}catch(e){}</script>
+    <script>
+      try {
+        Typekit.load({async: true});
+      } catch (e) {}
+    </script>
 
   </head>
   <body>
@@ -65,25 +67,116 @@
     <section class="hero text-center">
       <div class="container">
         <h1 class="display-1"></h1>
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <p class="lead"></p>
-              <!-- <div class="btn btn-primary">Listen to our music
-              </div> -->
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <p class="lead"></p>
+            <!-- <div class="btn btn-primary">Listen to our music </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--header with btn ====_home.scss======end================== -->
+
+
+    <section class="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 about-title d-flex align-items-center justify-content-center">
+            <%= image_tag ("thrill_life_logo.jpg"), class: "img-fluid " %>
+          </div>
+          <div class="col-lg-4 col-md-6 about-text d-flex flex-column justify-content-center">
+            <h2 class="display-2">
+              <a href="/about">ABOUT</a>
+            </h2>
+            <p>Thrill Life Productions was founded by Margarita Serrano in 2016. The company was created to shine a light on new and upcoming talent that often get sidelined due to the oversaturation of mainstream artists in New York. What started out as a small
+              hobby flourished into a full time business.</p>
+            <br>
+            <p>When Margarita isn't curating her own events or promoting, she is consulting for venues and other event promoters. She also assists new artists with management and mentorship. After spending the better half of the last decade in some of New York’s
+              most iconic venues such as Pacha, China Club, Cielo, Marquee, Output and Elsewhere she is a source of extensive knowledge and a valuable asset when it comes to music and the nightlife industry.</p>
+            <br>
+            <p>Her motto #thrillin4alivin came to life from her love of music and the career she created from it. Her idea is if you're not #thrillin4alivin then what are you really doing? If you aren't adding value and excitement to your life and those around
+              you then what are you living for?</p>
+            <br>
+            <p>Do it 4 the thrill or don't do it at all!</p>
+
+            <p>Thrill Life Productions, LLC.</p>
+          </div>
+        </div>
+        <!--/ROW -->
+      </div>
+      <!--/CONTAINER-FLUID ========band-members-position-->
+      <!--band-members=============== -->
+      <!-- note: .band-member in scss is noting wking remove 'bg-inverse' -->
+      <div class="container text-center band-members">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card bg-inverse border-0 band-member">
+              <%= image_tag ("GT7A2206.jpg"), class: "card-img-top img-fluid " %>
+              <!-- <img class="card-img-top img-fluid" src="imgages/dj1.jpg" alt="our dj's"> -->
+              <div class="card-block">
+                <h3 class="card-title text-primary band-member-name"></h3>
+                <p class="card-text band-member-position"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card bg-inverse border-0 band-member">
+              <%= image_tag ("fb_q.jpg"), class: "card-img-top img-fluid " %>
+              <!-- <img class="card-img-top img-fluid" src="images/dj2.jpg" alt="our dj's"> -->
+              <div class="card-block">
+                <h3 class="card-title text-primary band-member-name"></h3>
+                <p class="card-text band-member-position"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card bg-inverse border-0 band-member">
+              <%= image_tag ("GT7A2213.jpg"), class: "card-img-top img-fluid " %>
+              <div class="card-block">
+                <h3 class="card-title text-primary band-member-name"></h3>
+                <p class="card-text band-member-position"></p>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-  <!--header with btn ====_home.scss======end================== -->
+      </div>
+      <p class="music-cta"></p>
+      <a href="/events" class="btn btn-primary">See our merchandise</a>
+    </section>
+    <!--/ABOUT -->
+    <!-- ===========parallax=========about.scss================================= -->
+    <div class="parallax parallax-home">
 
-  <!-- _______________________________________________________________________________ -->
+      <!-- INSTAGRAM SECTION -->
+      <section class="hero text-center">
+        <div class="container">
+          <h2 class="our-music">
+            <a href="https://www.instagram.com/thrill_life_productions/"><br><br>
+              <br>FOLLOW US ON INSTAGRAM</a>
+          </h2><br><br>
+          <div class="row justify-content-center no-gutters">
+            <div class="col-xs-3 col">
+              <a href="https://www.instagram.com/thrill_life_productions/">
+                <%= image_tag ("instagram_1.png"), class: "img-fluid " %>
+              </a>
 
+            </div>
+            <div class="col-xs-3 col">
+              <a href="https://www.instagram.com/thrill_life_productions/">
+                <%= image_tag ("instagram_2.png"), class: "img-fluid " %>
+              </a>
 
+            </div>
+            <div class="col-xs-3 col">
+              <a href="https://www.instagram.com/thrill_life_productions/">
+                <%= image_tag ("instagram_8.png"), class: "img-fluid " %>
+              </a>
 
-<!-- _______________________________________________________________________________ -->
-
- <!--==============about====about.scss===========================  -->
-
+            </div>
+            <div class="col-xs-3 col">
+              <a href="https://www.instagram.com/thrill_life_productions/">
+                <%= image_tag ("instagram_14.png"), class: "img-fluid " %>
+              </a>
 
        <section class="about">
          <div class="container-fluid">
@@ -189,15 +282,38 @@
             </section><br><br>
         <!--INSTAGRAM SECTION END  -->
 
+            </div>
+          </div>
+        </div>
       </div>
- <!--  ===========our music=========start=====music.scss================== -->
-  <footer class="w3-light-grey w3-padding-64 w3-center" id="about">
-    <h2>For booking information</h2>
-    <h3>Please contact us at</h3><br>
-    <h4><p><b>Email</b><br>margarita@thrilllifeproductions.com</p></h4>
-  </footer>
+      <br><br>
+    </section><br><br><br><br>
+    <!--INSTAGRAM SECTION END -->
+  </div>
+  <!-- ===========our music=========start=====music.scss================== -->
+  <section id="newsletter" class="text-center p-4 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h5>For booking information
+          </h5>
+          <h7>
+            <p>Please email us at</p>
+            <a class="linkemail" href="mailto:margarita@thrilllifeprod.com"><b>margarita@thrilllifeprod.com</b></a></h7><br><br>
+          <form class="form-inline justify-content-center">
+            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Name">
+            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Email">
+            <!-- <button class="btn btn-outline-danger btn-block text-white mb-2"><a class="linkemail" href="mailto:margarita@thrilllifeprod.com"><b>Submit</b></a>
+            </button> -->
+            <a class="linkemail" href="mailto:margarita@thrilllifeprod.com">
+                    <input type="submit" value="Submit" class="btn btn-outline-danger btn-block"></a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer>
+  <footer>
   <div class="container">
     <div class="row">
       <div class="col-lg-5">
@@ -206,13 +322,13 @@
       <div class="col-lg-7">
         <ul class="list-inline social-links">
             <li class="list-inline-item social-link">
-                <a href="https://www.facebook.com/ThrillLifeProductions"><i class="fa fa-facebook" style="font-size:25px;color:white"></a></i></li>
+                <a href="https://www.facebook.com/ThrillLifeProductions"><i class="fab fa-facebook" style="font-size:25px;color:white"></a></i></li>
 
             <li class="list-inline-item social-link">
-                <a href="https://twitter.com/THRILLEST_1"><i class="fa fa-twitter" style="font-size:25px;color:white"></a></i></li>
+                <a href="https://twitter.com/THRILLEST_1"><i class="fab fa-twitter" style="font-size:25px;color:white"></a></i></li>
 
             <li class="list-inline-item social-link">
-              <a href="https://www.instagram.com/thrill_life_productions/"><i class="fa fa-instagram" style="font-size:25px;color:white"></a></i></li>
+              <a href="https://www.instagram.com/thrill_life_productions/"><i class="fab fa-instagram" style="font-size:25px;color:white"></a></i></li>
         </ul>
       </div>
     </div>
@@ -220,12 +336,19 @@
 </footer>
 
 
-    <!--Bootstrap JS  -->
-    <!--jQuery first(go to https://code.jquery.com for link ), then Popper.js, then Bootstrap JS   -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!--Bootstrap JS -->
+  <!--jQuery first(go to https://code.jquery.com for link ), then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <script>
+  // Get the current year for the copyright
+  $('#year').text(new Date().getFullYear());
+
+  </script>
 
   <%= yield %>
-</body>
+ </body>
 </html>
