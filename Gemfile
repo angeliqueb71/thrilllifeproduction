@@ -14,7 +14,7 @@ group :production do
   gem 'pg'
 end
 group :development do
-  gem 'sqlite3', '1.4.2', require: false
+  gem 'sqlite3', require: false
 end
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
